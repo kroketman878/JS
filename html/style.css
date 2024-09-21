@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
-    margin: 20px
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: black 3px 3px 3px;
 }
 
 
 body{
     background-image: url('img/background.jpg');
+    
 }
+
 
 p{
     color: white;
     font-family: poppins;
     font-size: 15px;
-    
+    padding-top: 5px;
+    background-color: #21252944;
+    max-width: fit-content;
 }
 
 h1{
@@ -21,17 +28,28 @@ h1{
     font-family: poppins;
     font-weight: bolder;
     font-size: 30px;
+    padding-bottom: 10px;
+    
 }
 
 img{
     width: 40%;
-    height: 40%;
+    height: 60%;
     display: inline-block;
     border: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    border: none;
 }
 
 article{
     background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: repeat;
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
@@ -42,4 +60,38 @@ figcaption{
     color: white;
     font-family: poppins;
     font-size: 15px;
+    padding-top: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.507);
+    max-width: fit-content;
+}
+
+a{
+    color: lightskyblue;
+    font-family: poppins;
+    font-size: 15px;
+    text-decoration: underline;
+    padding-left: 2px;
+}
+
+a:hover{
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+audio{
+    width: 10%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #33333323;
+    background-size: cover;   
+}
+
+iframe{
+    border-radius: 2px 2px 2px 2px;
+    border: solid black;
+    margin: 5px 5px 5px 5px; 
 }
